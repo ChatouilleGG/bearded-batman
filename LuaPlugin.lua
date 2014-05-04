@@ -142,7 +142,7 @@ function OtherFeature_OnMessage(nick, msg)
   return false;
 end
 
-SomeChan_OnTick()
+function SomeChan_OnTick()
   -- ...
   return false;
 end
