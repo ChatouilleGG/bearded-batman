@@ -27,6 +27,8 @@ function l_Init(chan_name)
 		};
 
   -- no '#' is the channel of private messages !
+  -- note tbat I've never tried it... so maybe it doesn't work...
+  -- actually if it works, it may cause problems because the amount of channels is limited in the C code :/
 	elseif ( string.sub(CHAN,1,1) ~= "#" ) then
 		BINDS = {
 			OnMessage = {SomeFeature_OnMessage, OtherFeature_OnMessage},
