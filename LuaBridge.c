@@ -22,6 +22,10 @@
 // Note: LuaPlugin.lua should be located in HexChat root folder
 //
 // on Windows, you can compile this into a HexChat addon that way:
+//	- install lua (5.1 is good !)
+//	- copy lua headers to this folder ( Lua/5.1/include/lua.h,lauxlib.h,luaconf.h,lualib.h )
+//	- copy lua lib to this folder ( Lua/5.1/lib/lua5.1.lib )
+//		^NOTE: if you use another version, make sure to change every occurence of it
 //	- create a shortcut with the following target (you'll have locate your vcvarsall.bat yourself!):
 //		%comspec% /k ""D:\VS2010\VCExpress\VC\vcvarsall.bat"" x86
 //	- execute the shortcut
@@ -41,7 +45,7 @@
 
 #include "hexchat-plugin.h"
 
-#pragma comment(lib, "lua5.1.lib")
+#pragma comment(lib, "lua5.1.lib")		// CHECK VERSION
 
 #define MAX_CHANNELS 16
 
