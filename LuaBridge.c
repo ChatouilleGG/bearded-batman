@@ -18,6 +18,7 @@
 //	- have one instance shared between all the channels, running a file such as LuaGlobal.lua
 //		+ ofcourse, add a command to reload the global script, just like /rui in a channel reloads this channel's instance
 //	- have one file and one instance per channel, running something like Lua#[channel_name].lua
+// ===> branch: BATMAN
 //
 // Note: LuaPlugin.lua should be located in HexChat root folder
 //
