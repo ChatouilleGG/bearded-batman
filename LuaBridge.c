@@ -2,9 +2,7 @@
 //================================================================
 // HexChat plugin to execute lua irc scripts
 //
-//======== IN PROGRESS !!!
-//
-// version 2 !
+// version 2 ! (pretty much done)
 //
 // how it works:
 //	- one instance of LuaGlobal.lua is generated upon addon load
@@ -18,6 +16,10 @@
 // Anything that require some kind of sync between several channels should be located in LuaGlobal.lua.
 // If you need to have a feature running in several channels independantly, you can and should use require("feature.lua");
 // instead of duplicating code in different lua#chan.lua files.
+//
+// possible improvements :
+//	- add a way for LuaGlobal to have some control over channel instances
+//		^that would help a lot for making a global enable/disable (on/off) for example.
 //
 // on Windows, you can compile this into a HexChat addon that way:
 //	- install lua (5.1 is good !)
