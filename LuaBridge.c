@@ -20,6 +20,7 @@
 // possible improvements :
 //	- add a way for LuaGlobal to have some control over channel instances
 //		^that would help a lot for making a global enable/disable (on/off) for example.
+//	- add private messages handler ? (LuaPriv.lua or something...)
 //
 // on Windows, you can compile this into a HexChat addon that way:
 //	- install lua (5.1 is good !)
